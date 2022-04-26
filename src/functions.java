@@ -21,11 +21,11 @@ public class functions {
         System.out.println(num1 + num2);
     }
     public static void favColorFinder(String color){
-        if (color == "red"){
+        if (color.equals("red")){
             System.out.println("red is a great color");
-        } else if (color == "green"){
+        } else if (color.equals("green")){
             System.out.println("green is a solid favorite color");
-        } else if (color == "black"){
+        } else if (color.equals("black")){
             System.out.println("so trendy");
         } else {
             System.out.println("YOU NEED TO EVALUATE YOUR FAVORITE COLOR CHOICE");
