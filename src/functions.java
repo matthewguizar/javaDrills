@@ -3,7 +3,7 @@ public class functions {
         helloWorld();
         greeting(" Valerie");
         add(8, 2);
-        favColorFinder("blue");
+        favColorFinder("black");
         thatsOdd(10);
         bigOrSmall();
     }
@@ -21,14 +21,18 @@ public class functions {
         System.out.println(num1 + num2);
     }
     public static void favColorFinder(String color){
-        if (color.equals("red")){
-            System.out.println("red is a great color");
-        } else if (color.equals("green")){
-            System.out.println("green is a solid favorite color");
-        } else if (color.equals("black")){
-            System.out.println("so trendy");
-        } else {
-            System.out.println("YOU NEED TO EVALUATE YOUR FAVORITE COLOR CHOICE");
+        switch (color) {
+            case "red":
+                System.out.println("red is a great color");
+                break;
+            case "green":
+                System.out.println("green is a solid favorite color");
+                break;
+            case "black":
+                System.out.println("so trendy");
+                break;
+            default:
+                System.out.println("YOU NEED TO CHANGE UR FAV COLOLR");
         }
 
     }
