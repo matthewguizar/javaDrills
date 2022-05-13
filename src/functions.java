@@ -1,46 +1,38 @@
 public class functions {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         helloWorld();
-        greeting(" Valerie");
-        add(8, 2);
-        favColorFinder("black");
-        thatsOdd(10);
-        bigOrSmall();
+        tisOdd(1);
     }
 
-    public static void bigOrSmall(){
-
+    private void bigOrSmall(int[] arr){
     }
-    public static void helloWorld(){
+    private static void helloWorld(){
         System.out.println("Hello world!");
+
     }
-    public static void greeting(String name){
+    private static void greeting(String name){
         System.out.println("sup" + name);
+
     }
-    public static void add(int num1, int num2){
-        System.out.println(num1 + num2);
+    private static int add(int num1, int num2){
+        return (num1 + num2);
     }
-    public static void favColorFinder(String color){
+    private static String favColorFinder(String color){
         switch (color) {
             case "red":
-                System.out.println("red is a great color");
-                break;
+                return ("red is a great color");
             case "green":
-                System.out.println("green is a solid favorite color");
-                break;
+                return ("green is a solid favorite color");
             case "black":
-                System.out.println("so trendy");
-                break;
+                return ("so trendy");
             default:
-                System.out.println("YOU NEED TO CHANGE UR FAV COLOLR");
+                return ("YOU NEED TO CHANGE UR FAV COLOR");
         }
 
     }
-    public static void thatsOdd(int num){
+    private static void tisOdd(int num){
         if (num % 2 == 1){
-            System.out.println("odd foo");
         } else {
-            System.out.println("even cuh");
         }
     }
 }
